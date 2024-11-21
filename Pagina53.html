@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú de Navegación</title>
+    <style>
+        .menu {
+            background-color: #333;
+            width: 100%;
+        }
+
+        .menu ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+
+        .menu  ul  li {
+            position: relative;
+        }
+
+        .menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            transition: background-color 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #575757;
+        }
+
+
+        .menu li ul {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            width: 200px;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .menu li:hover ul {
+            display: block;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            
+            <li>
+                <a href="#">Servicios</a>
+                <ul>
+                    <li><a href="Ej1_Tarjeta.html">Diseño Web</a></li>
+                    <li><a href="2.html">Programación 3</a></li>
+                    <li><a href="3.html">Desarrollo de Software</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#">Portafolio</a>
+                <ul>
+                    <li><a href="4.html">Sitios Web</a></li>
+                    <li><a href="Ej1_Tarjeta.html">Aplicaciones</a></li>
+                    <li><a href="https://github.com/miusuario" target="_blank">GitHub</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="contacto.html">Contacto</a></li>
+            
+            <li>
+                <a href="#">Recursos</a>
+                <ul>
+                    <li><a href="https://www.google.com" target="_blank">Búsqueda</a></li>
+                    <li><a href="https://www.wikipedia.org" target="_blank">Enciclopedia</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
